@@ -10,7 +10,7 @@ export function registerMaskSensitiveInfo(server: McpServer): void {
     {
       title: "Mask Sensitive Info",
       description:
-        "Privacy Guard MCP — Detects personal information in a text and returns a masked safe version. Two masking styles are available: star masking (e.g. 010-****-5678) and category tag replacement (e.g. [Phone number omitted]). Raw PII is never stored or included in the response. Use this to sanitize text before sharing or logging.",
+        "개인정보 세이프체크 — Detects personal information in a text and returns a masked safe version. Two masking styles are available: star masking (e.g. 010-****-5678) and category tag replacement (e.g. [Phone number omitted]). Raw PII is never stored or included in the response. Use this to sanitize text before sharing or logging.",
       inputSchema: {
         text: z
           .string()

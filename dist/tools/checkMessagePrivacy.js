@@ -5,7 +5,7 @@ import { safeLog } from "../utils/safeLogging.js";
 export function registerCheckMessagePrivacy(server) {
     server.registerTool("check_message_privacy", {
         title: "Check Message Privacy",
-        description: "Privacy Guard MCP — Analyzes a text message for personal information exposure risks before sending. Detects 14 PII types including national ID, card number, bank account, phone number, email, passport, driver's license, address, date of birth, and more. Returns risk score (0–100), risk level (CRITICAL/HIGH/MEDIUM/LOW/SAFE), detected items with masked forms, and two safe rewrite options. Raw PII is never stored or returned.",
+        description: "개인정보 세이프체크 — Analyzes a text message for personal information exposure risks before sending. Detects 14 PII types including national ID, card number, bank account, phone number, email, passport, driver's license, address, date of birth, and more. Returns risk score (0–100), risk level (CRITICAL/HIGH/MEDIUM/LOW/SAFE), detected items with masked forms, and two safe rewrite options. Raw PII is never stored or returned.",
         inputSchema: {
             message: z
                 .string()

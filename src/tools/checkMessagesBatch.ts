@@ -10,7 +10,7 @@ export function registerCheckMessagesBatch(server: McpServer): void {
     {
       title: "Check Messages Batch",
       description:
-        "Privacy Guard MCP — Analyzes up to 20 text messages in a single call for personal information exposure risks. Each message is checked independently and returns risk level (CRITICAL/HIGH/MEDIUM/LOW/SAFE), risk score, and detected PII types. Raw PII is never stored or returned; only masked previews are shown. Useful for bulk pre-send screening.",
+        "개인정보 세이프체크 — Analyzes up to 20 text messages in a single call for personal information exposure risks. Each message is checked independently and returns risk level (CRITICAL/HIGH/MEDIUM/LOW/SAFE), risk score, and detected PII types. Raw PII is never stored or returned; only masked previews are shown. Useful for bulk pre-send screening.",
       inputSchema: {
         messages: z
           .array(z.string().min(1).max(10000))

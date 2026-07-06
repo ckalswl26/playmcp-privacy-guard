@@ -1,7 +1,7 @@
 export function registerGetPrivacyRiskGuide(server) {
     server.registerTool("get_privacy_risk_guide", {
         title: "Get Privacy Risk Guide",
-        description: "Privacy Guard MCP — Returns the complete reference guide for privacy risk levels, detected PII types, context multipliers, and privacy-by-design principles. Call this first to understand how risk scoring works before using the other tools.",
+        description: "개인정보 세이프체크 — Returns the complete reference guide for privacy risk levels, detected PII types, context multipliers, and privacy-by-design principles. Call this first to understand how risk scoring works before using the other tools.",
         annotations: {
             title: "Get Privacy Risk Guide",
             readOnlyHint: true,

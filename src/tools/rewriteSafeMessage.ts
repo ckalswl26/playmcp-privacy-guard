@@ -10,7 +10,7 @@ export function registerRewriteSafeMessage(server: McpServer): void {
     {
       title: "Rewrite Safe Message",
       description:
-        "Privacy Guard MCP — Analyzes a message for personal information exposure and returns two privacy-safe rewrite options: option 1 uses star masking (partial form visible), option 2 uses category tag replacement (fully removed, recommended). Raw PII is never stored or included in the response. Ideal for pre-send review in chat or email clients.",
+        "개인정보 세이프체크 — Analyzes a message for personal information exposure and returns two privacy-safe rewrite options: option 1 uses star masking (partial form visible), option 2 uses category tag replacement (fully removed, recommended). Raw PII is never stored or included in the response. Ideal for pre-send review in chat or email clients.",
       inputSchema: {
         message: z
           .string()
